@@ -1,0 +1,25 @@
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.navBar h1 {
+    margin: 0;
+}
+.navBar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.navBarContainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
