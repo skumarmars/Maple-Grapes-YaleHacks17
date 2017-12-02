@@ -13,5 +13,9 @@ router.get('/hello', (req, res) => {
   }
   res.json(peter)
 })
-
+router.post('/api/fname', (req, res) => {
+  const data = req.body;
+  console.log(data.query);
+  res.json('The data is posted');
+})
 module.exports = router;
