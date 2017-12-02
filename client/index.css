@@ -1,25 +1,32 @@
-.clearfix::after {
-    display: block;
-    clear: both;
-    content: "";
+.logoContainer {
+    padding: 50px 30px;
 }
-.float-left {
-    float: left;
-}
-.float-right {
-    float: right;
-}
-.navBar h1 {
-    margin: 0;
-}
-.navBar {
+.contentSection .sideBar .searchBar {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    min-height: 60px;
+    font-size: 22px;
+    font-weight: 100;
     width: 100%;
 }
-.navBarContainer {
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px 0;
+.row .sideBar {
+    padding-left: 0;
+    padding-right: 0;
+    border-right: 1px solid #999;
+    height: 100vh;
 }
-.navBarContainer .float-right {
-    width: 300px;
+.searchContainer {
+    position: relative;
+}
+.sideBar select {
+    position: relative;
+    top: 30px;
+}
+.sideBar i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
