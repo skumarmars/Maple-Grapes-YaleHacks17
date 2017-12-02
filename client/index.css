@@ -2,21 +2,28 @@
     padding: 50px 30px;
 }
 .contentSection .sideBar .searchBar {
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
+    border-top: 1px solid rgba(0,0,0,0.14);
+    border-bottom: 1px solid rgba(0,0,0,0.14);
     padding: 8px 15px;
     box-sizing: border-box;
     min-height: 60px;
     font-size: 22px;
-    font-weight: 100;
+    font-weight: 300;
     width: 100%;
+    letter-spacing: 1px;
 }
 .row .sideBar {
     padding-left: 0;
     padding-right: 0;
-    border-right: 1px solid #999;
+    border-right: 1px solid rgba(0,0,0,0.14);
     height: 100vh;
 }
+.sideBar button {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+}
+
 .searchContainer {
     position: relative;
 }
@@ -24,9 +31,39 @@
     position: relative;
     top: 30px;
 }
+.select-wrapper input.select-dropdown {
+    padding: 8px 15px;
+    box-sizing: border-box;
+    height: 60px;
+}
 .sideBar i {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+}
+.card h1 {
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0px 0;
+}
+.card span {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+.card .card-content {
+    padding: 8px 12px;
+}
+.card .card-action {
+    padding: 4px 12px;
+}
+.card .card-image .card-title {
+    padding: 4px 12px;
+}
+.preloader-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 30%;
 }
