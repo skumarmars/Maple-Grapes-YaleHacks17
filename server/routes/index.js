@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
+const getGooglePatentScores = require('../controllers/getQueryScore');
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  getGooglePatentScores()
 });
 
 router.get('/hello', (req, res) => {
