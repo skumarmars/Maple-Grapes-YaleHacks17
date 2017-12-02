@@ -1,25 +1,69 @@
-.clearfix::after {
-    display: block;
-    clear: both;
-    content: "";
+.logoContainer {
+    padding: 50px 30px;
 }
-.float-left {
-    float: left;
-}
-.float-right {
-    float: right;
-}
-.navBar h1 {
-    margin: 0;
-}
-.navBar {
+.contentSection .sideBar .searchBar {
+    border-top: 1px solid rgba(0,0,0,0.14);
+    border-bottom: 1px solid rgba(0,0,0,0.14);
+    padding: 8px 15px;
+    box-sizing: border-box;
+    min-height: 60px;
+    font-size: 22px;
+    font-weight: 300;
     width: 100%;
+    letter-spacing: 1px;
 }
-.navBarContainer {
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px 0;
+.row .sideBar {
+    padding-left: 0;
+    padding-right: 0;
+    border-right: 1px solid rgba(0,0,0,0.14);
+    height: 100vh;
 }
-.navBarContainer .float-right {
-    width: 300px;
+.sideBar button {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+}
+
+.searchContainer {
+    position: relative;
+}
+.sideBar select {
+    position: relative;
+    top: 30px;
+}
+.select-wrapper input.select-dropdown {
+    padding: 8px 15px;
+    box-sizing: border-box;
+    height: 60px;
+}
+.sideBar i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card h1 {
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0px 0;
+}
+.card span {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+.card .card-content {
+    padding: 8px 12px;
+}
+.card .card-action {
+    padding: 4px 12px;
+}
+.card .card-image .card-title {
+    padding: 4px 12px;
+}
+.preloader-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 30%;
 }
