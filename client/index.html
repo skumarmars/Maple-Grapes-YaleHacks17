@@ -9,7 +9,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="material.css">
     <link rel="stylesheet" href="index.css">
-     
+    <link rel="stylesheet" href="icon.css">
 </head>
     <body>
         <div class="navBar">
@@ -20,16 +20,31 @@
                     </div>
                     <div class="float-right">
                         <select>
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
+                            <option value="tc">Technology</option>
+                            <option value="ph">Pharma</option>
+                            <option value="fn">Finance</option>
+                            <option value="tmt">Media & Telecom</option>
+                            <option value="tp">Transportation</option>
+                            <option value="ab">AgriBusiness</option>
+                            <option value="ii">Industry & Infrastructure</option>
                         </select>
-                        <label>Materialize Select</label>
+                        <label>Select an industry to reserach</label>
                     </div>
                 </div>
             </div>
         </div>
+        <nav class="blue lighten-1">
+            <div class="nav-wrapper">
+            <form>
+                <div class="input-field">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+                </div>
+            </form>
+            </div>
+        </nav>
+        
     </body>
         
     <!-- Compiled and minified JavaScript -->

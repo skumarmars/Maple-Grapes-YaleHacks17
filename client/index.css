@@ -14,12 +14,12 @@
 }
 .navBar {
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 .navBarContainer {
     width: 80%;
     margin: 0 auto;
     padding: 30px 0;
+}
+.navBarContainer .float-right {
+    width: 300px;
 }
