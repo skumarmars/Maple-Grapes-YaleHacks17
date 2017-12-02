@@ -11,6 +11,7 @@ router.get('/hello', (req, res) => {
     name: 'peter',
     age: 20
   }
+  getQueryScore();
   res.json(peter)
 })
 router.post('/api/fname', (req, res) => {
