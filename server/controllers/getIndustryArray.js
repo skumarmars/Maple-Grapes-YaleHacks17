@@ -1,7 +1,8 @@
 const cheerio = require('cheerio');
 const axios = require('axios');
+const industry = "technology";
 
-const getArticle => {
+const getArticle = (tech) => {
   const type = "news"
   axios.get(`http://www.google.com/search?q=${industry}+${tech}+${type}`)
   .then((data) => {
@@ -12,7 +13,7 @@ const getArticle => {
   })
 };
 
-const getIndustryArray = (req) => {
+const getIndustryArray = () => {
   
   const IndustryArray = [];
   
@@ -31,13 +32,15 @@ const getIndustryArray = (req) => {
     
     const linksObject = {
       img: imgUrl.item,
-      article: getArticle(),
-      research: getResearch(),
-      company: getCompany(),
+      article: getArticle(tech),
+      // research: getResearch(tech),
+      // company: getCompany(tech),
     };
+
+    IndustryArray.push(linksObject);
 
   });
 
 }
 
-module.exports = getIndustryRelevant
+module.exports = getIndustryArray;
