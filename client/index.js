@@ -59,6 +59,10 @@ initializeChart = () => {
         const yml = [];
         const xai = [];
         const yai = [];
+        const xar = [];
+        const yar = [];
+        const xbc = [];
+        const ybc = [];
         data.techml.forEach((e) => {
             xml.push(e.week)
             yml.push(e.trend)
@@ -66,6 +70,14 @@ initializeChart = () => {
         data.techai.forEach((e) => {
             xai.push(e.week)
             yai.push(e.trend)
+        })
+        data.techar.forEach((e) => {
+            xar.push(e.week)
+            yar.push(e.trend)
+        })
+        data.techbc.forEach((e) => {
+            xbc.push(e.week)
+            ybc.push(e.trend)
         })
         var ctx = document.getElementById('myChart').getContext('2d');
         var chart = new Chart(ctx, {
@@ -87,6 +99,18 @@ initializeChart = () => {
                         backgroundColor: 'rgba(255, 255, 255,0)',
                         borderColor: 'rgb(65, 99, 22)',
                         data: yai
+                    },
+                    {
+                        label: "Augmented Reality",
+                        backgroundColor: 'rgba(255, 255, 255,0)',
+                        borderColor: 'rgb(22, 99, 22)',
+                        data: yar
+                    },
+                    {
+                        label: "Blockchain",
+                        backgroundColor: 'rgba(255, 255, 255,0)',
+                        borderColor: 'rgb(65, 124, 192)',
+                        data: ybc
                     },
                 ]
             },
