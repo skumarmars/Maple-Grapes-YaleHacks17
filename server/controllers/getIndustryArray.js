@@ -1,17 +1,20 @@
 const cheerio = require('cheerio');
 const axios = require('axios');
 
-const getArticle = (tech, industry) => {
-  const type = "news";
+const getUrl = (industry, tech, type) => {
   const query = `http://www.google.com/search?q=${industry}+${tech[0]}+${type}`
   axios.get(query)
   .then((htmlString) => {
+
     const $ = cheerio.load(htmlString.data)
     const targetAnchor = $('.r');
-    const showData = targetAnchor[0].children[0].children
-    console.log(showData)
-    return targetAnchor;
+    const showData = targetAnchor[0].children[0].attribs.href.slice(7)
+    const url = showData.split("&sa=")[0]    
+    console.log(url);
+    return url;
+
   })
+
 };
 
 const getIndustryArray = (industry) => {
@@ -39,8 +42,7 @@ const getIndustryArray = (industry) => {
   //   IndustryArray.push(linksObject);
 
   // });
-  const article = getArticle(tech, industry);
-  console.log(article)
+  const news = getUrl(industry, tech, "news");
   return IndustryArray
 
 }
