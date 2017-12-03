@@ -58,6 +58,8 @@
 }
 .card .card-action {
     padding: 4px 12px;
+    height: 92px;
+    box-sizing: border-box;
 }
 .card .card-image .card-title {
     padding: 4px 12px;
@@ -69,4 +71,17 @@
 }
 .chartContainer {
     width: 100%;
+}
+.card-header {
+    background-color: #42A5F5;
+    color: #fff;
+    text-align: center;
+    padding: 8px 12px;
+}
+.card-header span {
+    color: #fff;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #000;
+    text-transform: capitalize;
 }
