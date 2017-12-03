@@ -25,6 +25,11 @@ initializeData = () => {
         77.05,
         71.49
     ]
+    var multiplier =   Math.random() * (1 - 0.9) + 0.9;
+    var NewScores = []
+    for (var i = 0; i < scores.length; i++) {
+        NewScores.push(Math.ceil(scores[i] * multiplier))
+    }
     $.ajax({
         url: 'http://localhost:3000/industry',
         data: {
@@ -53,7 +58,7 @@ initializeData = () => {
                             <a target="_blank" href="${data[i].startupUrl}">${data[i].startupTitle}</a>
                         </div>
                         <div class="card-footer">
-                            <span class="score">${scores[i]}</span>
+                            <span class="score">${NewScores[i]}</span>
                         </div>
                     </div>
                 </div>
