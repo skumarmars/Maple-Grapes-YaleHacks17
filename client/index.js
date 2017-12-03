@@ -54,12 +54,18 @@ initializeData = () => {
 initializeChart = () => {
     const industry = "tech";
     const field = "ml";
-    $.get(`http://localhost:3000/${industry}/${field}`, (data) => {
-        const x = []
-        const y = []
-        data.forEach((e) => {
-            x.push(e.week)
-            y.push(e.trend)
+    $.get(`http://localhost:3000/${industry}`, (data) => {
+        const xml = [];
+        const yml = [];
+        const xai = [];
+        const yai = [];
+        data.techml.forEach((e) => {
+            xml.push(e.week)
+            yml.push(e.trend)
+        })
+        data.techai.forEach((e) => {
+            xai.push(e.week)
+            yai.push(e.trend)
         })
         var ctx = document.getElementById('myChart').getContext('2d');
         var chart = new Chart(ctx, {
@@ -68,13 +74,19 @@ initializeChart = () => {
         
             // The data for our dataset
             data: {
-                labels: x,
+                labels: xml,
                 datasets: [
                         {
                         label: "Machine Learning",
                         backgroundColor: 'rgba(255, 255, 255,0)',
                         borderColor: 'rgb(255, 99, 132)',
-                        data: y
+                        data: yml
+                    },
+                    {
+                        label: "Artificial Intelligence",
+                        backgroundColor: 'rgba(255, 255, 255,0)',
+                        borderColor: 'rgb(65, 99, 22)',
+                        data: yai
                     },
                 ]
             },
