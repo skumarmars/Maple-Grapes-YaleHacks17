@@ -78,6 +78,24 @@
     text-align: center;
     padding: 8px 12px;
 }
+.card-footer {
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    padding: 8px 12px;
+}
+.card-footer span {
+    font-size: 24px;
+}
+.card-footer.large {
+    background-color: green;
+}
+.card-footer.med {
+    background-color: orange;
+}
+.card-footer.small {
+    background-color: yellow;
+}
 .card-header span {
     color: #fff;
 }

@@ -16,6 +16,14 @@ clearDateFromPreviousQuery = (x) => {
 initializeData = () => {
     const industry = $('#industrySelect').val();
     const keyword = $('#searchInput').val();
+    const scores = [
+        96.53,
+        96.12,
+        77.67,
+        77.05,
+        98.42,
+        71.49
+    ]
     $.ajax({
         url: 'http://localhost:3000/industry',
         data: {
@@ -43,10 +51,22 @@ initializeData = () => {
                             <span>Company:</span><br>
                             <a href="${data[i].startupUrl}">${data[i].startupTitle}</a>
                         </div>
+                        <div class="card-footer">
+                            <span class="score">${scores[i]}</span>
+                        </div>
                     </div>
                 </div>
             `)
         }
+        $('.score').forEach((e) => {
+            if ($(e).text() >= 90) {
+                $(e).parent().addClass('large')
+            } else if ($(e).text() >= 80 && $(e).text() < 90) {
+                $(e).parent().addClass('med')
+            } else if ($(e).text() < 80 ) {
+                $(e).parent().addClass('small')
+            }
+        })
         $('.preloader-wrapper').removeClass('active')
         $('#contentContainer').fadeIn()
         initializeChart();
