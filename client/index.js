@@ -42,15 +42,15 @@ initializeData = () => {
                         </div>
                         <div class="card-action">
                             <span>Article:</span><br>
-                            <a href="${data[i].url}">${data[i].title}</a>
+                            <a target="_blank" href="${data[i].url}">${data[i].title}</a>
                         </div>
                         <div class="card-action">
                             <span>Research:</span><br>
-                            <a href="${data[i].researchUrl}">${data[i].researchTitle}</a>
+                            <a target="_blank" href="${data[i].researchUrl}">${data[i].researchTitle}</a>
                         </div>
                         <div class="card-action">
                             <span>Company:</span><br>
-                            <a href="${data[i].startupUrl}">${data[i].startupTitle}</a>
+                            <a target="_blank" href="${data[i].startupUrl}">${data[i].startupTitle}</a>
                         </div>
                         <div class="card-footer">
                             <span class="score">${scores[i]}</span>
