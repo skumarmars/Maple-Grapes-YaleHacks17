@@ -12,11 +12,23 @@ const axios = require('axios');
   return url;
 };
 
-async function getTitle(url) {
-  console.log(url)
+getTitle = (url) => {
+
+  const new_url = url.split('/').slice(-1)[0];
+  let modified_url = new_url.split('-');
+
+  for (var i = 0; i < modified_url.length; i ++){
+    let word = modified_url[i]
+    let modified_word = (word.charAt(0).toUpperCase() + word.slice(1));
+    modified_url[i] = modified_word;
+  }
+
+  const final_Url = modified_url.join(" ")
+  console.log(final_Url)
+
+  return final_Url
+
 };
-
-
 
 const getIndustryArray = (industry) => {
   
@@ -24,8 +36,8 @@ const getIndustryArray = (industry) => {
   
   const tech = ["machine_learning", "artificial_intelligence", "blockchain", "biometrics", "internet_of_things", "augmented_reality"]
 
-  getUrl(industry, tech, "news").then((data) => {
-    getTitle(data);
+  getUrl(industry, tech, "news").then((url) => {
+    title = getTitle(url);
   })
   
 
