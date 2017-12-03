@@ -1,0 +1,366 @@
+[
+    {
+       "Week":"12/4/2016",
+       "Machine learning":19,
+       "Blockchain":18,
+       "Internet of Things":32,
+       "Biometrics":23
+    },
+    {
+       "Week":"12/11/2016",
+       "Machine learning":18,
+       "Blockchain":17,
+       "Internet of Things":31,
+       "Biometrics":22
+    },
+    {
+       "Week":"12/18/2016",
+       "Machine learning":17,
+       "Blockchain":16,
+       "Internet of Things":29,
+       "Biometrics":22
+    },
+    {
+       "Week":"12/25/2016",
+       "Machine learning":13,
+       "Blockchain":14,
+       "Internet of Things":24,
+       "Biometrics":21
+    },
+    {
+       "Week":"1/1/2017",
+       "Machine learning":17,
+       "Blockchain":18,
+       "Internet of Things":29,
+       "Biometrics":26
+    },
+    {
+       "Week":"1/8/2017",
+       "Machine learning":19,
+       "Blockchain":19,
+       "Internet of Things":32,
+       "Biometrics":26
+    },
+    {
+       "Week":"1/15/2017",
+       "Machine learning":20,
+       "Blockchain":19,
+       "Internet of Things":32,
+       "Biometrics":26
+    },
+    {
+       "Week":"1/22/2017",
+       "Machine learning":19,
+       "Blockchain":20,
+       "Internet of Things":31,
+       "Biometrics":25
+    },
+    {
+       "Week":"1/29/2017",
+       "Machine learning":19,
+       "Blockchain":19,
+       "Internet of Things":30,
+       "Biometrics":28
+    },
+    {
+       "Week":"2/5/2017",
+       "Machine learning":20,
+       "Blockchain":20,
+       "Internet of Things":32,
+       "Biometrics":25
+    },
+    {
+       "Week":"2/12/2017",
+       "Machine learning":21,
+       "Blockchain":20,
+       "Internet of Things":33,
+       "Biometrics":24
+    },
+    {
+       "Week":"2/19/2017",
+       "Machine learning":21,
+       "Blockchain":22,
+       "Internet of Things":33,
+       "Biometrics":25
+    },
+    {
+       "Week":"2/26/2017",
+       "Machine learning":22,
+       "Blockchain":24,
+       "Internet of Things":34,
+       "Biometrics":25
+    },
+    {
+       "Week":"3/5/2017",
+       "Machine learning":22,
+       "Blockchain":24,
+       "Internet of Things":33,
+       "Biometrics":25
+    },
+    {
+       "Week":"3/12/2017",
+       "Machine learning":22,
+       "Blockchain":23,
+       "Internet of Things":34,
+       "Biometrics":24
+    },
+    {
+       "Week":"3/19/2017",
+       "Machine learning":22,
+       "Blockchain":24,
+       "Internet of Things":34,
+       "Biometrics":24
+    },
+    {
+       "Week":"3/26/2017",
+       "Machine learning":23,
+       "Blockchain":22,
+       "Internet of Things":34,
+       "Biometrics":25
+    },
+    {
+       "Week":"4/2/2017",
+       "Machine learning":22,
+       "Blockchain":22,
+       "Internet of Things":33,
+       "Biometrics":24
+    },
+    {
+       "Week":"4/9/2017",
+       "Machine learning":23,
+       "Blockchain":21,
+       "Internet of Things":33,
+       "Biometrics":22
+    },
+    {
+       "Week":"4/16/2017",
+       "Machine learning":23,
+       "Blockchain":21,
+       "Internet of Things":32,
+       "Biometrics":24
+    },
+    {
+       "Week":"4/23/2017",
+       "Machine learning":23,
+       "Blockchain":24,
+       "Internet of Things":33,
+       "Biometrics":25
+    },
+    {
+       "Week":"4/30/2017",
+       "Machine learning":22,
+       "Blockchain":25,
+       "Internet of Things":29,
+       "Biometrics":25
+    },
+    {
+       "Week":"5/7/2017",
+       "Machine learning":23,
+       "Blockchain":28,
+       "Internet of Things":35,
+       "Biometrics":24
+    },
+    {
+       "Week":"5/14/2017",
+       "Machine learning":24,
+       "Blockchain":30,
+       "Internet of Things":33,
+       "Biometrics":25
+    },
+    {
+       "Week":"5/21/2017",
+       "Machine learning":24,
+       "Blockchain":38,
+       "Internet of Things":33,
+       "Biometrics":25
+    },
+    {
+       "Week":"5/28/2017",
+       "Machine learning":23,
+       "Blockchain":34,
+       "Internet of Things":31,
+       "Biometrics":26
+    },
+    {
+       "Week":"6/4/2017",
+       "Machine learning":24,
+       "Blockchain":36,
+       "Internet of Things":31,
+       "Biometrics":28
+    },
+    {
+       "Week":"6/11/2017",
+       "Machine learning":24,
+       "Blockchain":37,
+       "Internet of Things":32,
+       "Biometrics":28
+    },
+    {
+       "Week":"6/18/2017",
+       "Machine learning":25,
+       "Blockchain":38,
+       "Internet of Things":31,
+       "Biometrics":28
+    },
+    {
+       "Week":"6/25/2017",
+       "Machine learning":23,
+       "Blockchain":36,
+       "Internet of Things":29,
+       "Biometrics":29
+    },
+    {
+       "Week":"7/2/2017",
+       "Machine learning":22,
+       "Blockchain":32,
+       "Internet of Things":29,
+       "Biometrics":28
+    },
+    {
+       "Week":"7/9/2017",
+       "Machine learning":24,
+       "Blockchain":34,
+       "Internet of Things":31,
+       "Biometrics":29
+    },
+    {
+       "Week":"7/16/2017",
+       "Machine learning":24,
+       "Blockchain":34,
+       "Internet of Things":31,
+       "Biometrics":33
+    },
+    {
+       "Week":"7/23/2017",
+       "Machine learning":24,
+       "Blockchain":33,
+       "Internet of Things":30,
+       "Biometrics":30
+    },
+    {
+       "Week":"7/30/2017",
+       "Machine learning":24,
+       "Blockchain":34,
+       "Internet of Things":29,
+       "Biometrics":31
+    },
+    {
+       "Week":"8/6/2017",
+       "Machine learning":23,
+       "Blockchain":35,
+       "Internet of Things":28,
+       "Biometrics":30
+    },
+    {
+       "Week":"8/13/2017",
+       "Machine learning":23,
+       "Blockchain":41,
+       "Internet of Things":27,
+       "Biometrics":30
+    },
+    {
+       "Week":"8/20/2017",
+       "Machine learning":23,
+       "Blockchain":43,
+       "Internet of Things":29,
+       "Biometrics":30
+    },
+    {
+       "Week":"8/27/2017",
+       "Machine learning":24,
+       "Blockchain":44,
+       "Internet of Things":30,
+       "Biometrics":29
+    },
+    {
+       "Week":"9/3/2017",
+       "Machine learning":25,
+       "Blockchain":45,
+       "Internet of Things":32,
+       "Biometrics":29
+    },
+    {
+       "Week":"9/10/2017",
+       "Machine learning":27,
+       "Blockchain":46,
+       "Internet of Things":34,
+       "Biometrics":33
+    },
+    {
+       "Week":"9/17/2017",
+       "Machine learning":27,
+       "Blockchain":47,
+       "Internet of Things":33,
+       "Biometrics":32
+    },
+    {
+       "Week":"9/24/2017",
+       "Machine learning":25,
+       "Blockchain":44,
+       "Internet of Things":33,
+       "Biometrics":32
+    },
+    {
+       "Week":"10/1/2017",
+       "Machine learning":26,
+       "Blockchain":45,
+       "Internet of Things":33,
+       "Biometrics":32
+    },
+    {
+       "Week":"10/8/2017",
+       "Machine learning":28,
+       "Blockchain":52,
+       "Internet of Things":35,
+       "Biometrics":31
+    },
+    {
+       "Week":"10/15/2017",
+       "Machine learning":28,
+       "Blockchain":57,
+       "Internet of Things":34,
+       "Biometrics":34
+    },
+    {
+       "Week":"10/22/2017",
+       "Machine learning":29,
+       "Blockchain":58,
+       "Internet of Things":34,
+       "Biometrics":34
+    },
+    {
+       "Week":"10/29/2017",
+       "Machine learning":29,
+       "Blockchain":61,
+       "Internet of Things":33,
+       "Biometrics":31
+    },
+    {
+       "Week":"11/5/2017",
+       "Machine learning":29,
+       "Blockchain":65,
+       "Internet of Things":36,
+       "Biometrics":34
+    },
+    {
+       "Week":"11/12/2017",
+       "Machine learning":29,
+       "Blockchain":65,
+       "Internet of Things":37,
+       "Biometrics":32
+    },
+    {
+       "Week":"11/19/2017",
+       "Machine learning":27,
+       "Blockchain":66,
+       "Internet of Things":33,
+       "Biometrics":77
+    },
+    {
+       "Week":"11/26/2017",
+       "Machine learning":30,
+       "Blockchain":91,
+       "Internet of Things":40,
+       "Biometrics":54
+    }
+ ]
