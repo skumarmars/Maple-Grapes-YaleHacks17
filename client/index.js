@@ -25,7 +25,7 @@ initializeData = () => {
         77.05,
         71.49
     ]
-    var multiplier =   Math.random() * (1 - 0.9) + 0.9;
+    var multiplier =   Math.random() * (1 - 0.7) + 0.7;
     var NewScores = []
     for (var i = 0; i < scores.length; i++) {
         NewScores.push(Math.ceil(scores[i] * multiplier))
