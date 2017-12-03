@@ -61,13 +61,16 @@
     height: 92px;
     box-sizing: border-box;
 }
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+    color: #43a047;
+}
 .card .card-image .card-title {
     padding: 4px 12px;
 }
 .preloader-wrapper {
     position: absolute;
-    left: 50%;
-    top: 30%;
+    left: 60%;
+    top: 10%;
 }
 .chartContainer {
     width: 100%;
@@ -87,14 +90,25 @@
 .card-footer span {
     font-size: 24px;
 }
-.card-footer.large {
+.card-footer {
     background-color: green;
 }
+.card-footer.large {
+    background-color: #43a047;
+    color: #fff;
+}
+.card-footer.large * {
+    color: #fff;
+}
 .card-footer.med {
-    background-color: orange;
+    background-color: #ff6f00;
+    color: #fff;
+}
+.card-footer.med * {
+    color: #fff;
 }
 .card-footer.small {
-    background-color: yellow;
+    background-color: #ffff00;
 }
 .card-header span {
     color: #fff;
@@ -103,3 +117,22 @@
     color: #000;
     text-transform: capitalize;
 }
+#grape {
+    animation: spin 1.5s linear infinite;
+    position: relative;
+    left: 120px;
+}
+.loaderSection {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 50%;
+    display: none;
+}
+.loaderSection.active {
+    display: block;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

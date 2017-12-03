@@ -3,8 +3,9 @@
 
 $('#searchBtn').click(() => {
     clearDateFromPreviousQuery($('#contentContainer'))
-    $('.preloader-wrapper').addClass('active')
+    $('.loaderSection').addClass('active')
     $('#contentContainer').hide()
+    $('.chartContainer').hide();
     initializeData()
 })
 
@@ -19,9 +20,9 @@ initializeData = () => {
     const scores = [
         96.53,
         96.12,
-        77.67,
-        77.05,
         98.42,
+        82.67,
+        77.05,
         71.49
     ]
     $.ajax({
@@ -58,16 +59,19 @@ initializeData = () => {
                 </div>
             `)
         }
-        $('.score').forEach((e) => {
-            if ($(e).text() >= 90) {
-                $(e).parent().addClass('large')
-            } else if ($(e).text() >= 80 && $(e).text() < 90) {
-                $(e).parent().addClass('med')
-            } else if ($(e).text() < 80 ) {
-                $(e).parent().addClass('small')
+        
+        for (var i = 0; i < $('.score').length; i ++) {
+            var self = $($('.score')[i]);
+            var num = Number(self.text());
+            if (num >= 90) {
+                self.parent().addClass('large')
+            } else if (num >= 80 && num < 90) {
+                self.parent().addClass('med')
+            } else {
+                self.parent().addClass('small')
             }
-        })
-        $('.preloader-wrapper').removeClass('active')
+        }
+        $('.loaderSection').removeClass('active')
         $('#contentContainer').fadeIn()
         initializeChart();
     })
@@ -83,8 +87,6 @@ initializeChart = () => {
         const yai = [];
         const xar = [];
         const yar = [];
-        const xbc = [];
-        const ybc = [];
         data.techml.forEach((e) => {
             xml.push(e.week)
             yml.push(e.trend)
@@ -97,10 +99,7 @@ initializeChart = () => {
             xar.push(e.week)
             yar.push(e.trend)
         })
-        data.techbc.forEach((e) => {
-            xbc.push(e.week)
-            ybc.push(e.trend)
-        })
+        $('.chartContainer').fadeIn();
         var ctx = document.getElementById('myChart').getContext('2d');
         var chart = new Chart(ctx, {
             // The type of chart we want to create
@@ -119,7 +118,7 @@ initializeChart = () => {
                     {
                         label: "Artificial Intelligence",
                         backgroundColor: 'rgba(255, 255, 255,0)',
-                        borderColor: 'rgb(65, 99, 22)',
+                        borderColor: '#42A5F5',
                         data: yai
                     },
                     {
@@ -127,12 +126,6 @@ initializeChart = () => {
                         backgroundColor: 'rgba(255, 255, 255,0)',
                         borderColor: 'rgb(22, 99, 22)',
                         data: yar
-                    },
-                    {
-                        label: "Blockchain",
-                        backgroundColor: 'rgba(255, 255, 255,0)',
-                        borderColor: 'rgb(65, 124, 192)',
-                        data: ybc
                     },
                 ]
             },
