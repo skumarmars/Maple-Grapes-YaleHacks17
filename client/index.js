@@ -5,7 +5,7 @@ $('#searchBtn').click(() => {
     clearDateFromPreviousQuery($('#contentContainer'))
     $('.preloader-wrapper').addClass('active')
     setTimeout(displayContainerInAFancyWay, 1500);
-    initializeDataTable();
+    initializeChart();
 })
 
 
@@ -50,30 +50,17 @@ initializeData = () => {
         `)
     }
 }
-loopArray = (data, arraySet, key) => {
-    data.forEach((e) => {
-        if (key.split(" ").length >= 2) {
-            arraySet.push(e[key])
-        } else {
-            arraySet.push(e.key)
-        }
-            
-    })
-    console.log(arraySet, key)
-}
 
-initializeDataTable = () => {
-    $.get('http://localhost:3000/api/test', (data) => {
-        var weeks = [];
-        var data1 = [];
-        var data2 = [];
-        var data3 = [];
-        var data4 = [];
-        loopArray(data, weeks, "Week")
-        loopArray(data, data1, 'Machine learning')
-        loopArray(data, data2, 'Blockchain')
-        loopArray(data, data3, 'Internet of Things')
-        loopArray(data, data4, 'Biometrics')
+initializeChart = () => {
+    const industry = "tech";
+    const field = "ml";
+    $.get(`http://localhost:3000/${industry}/${field}`, (data) => {
+        const x = []
+        const y = []
+        data.forEach((e) => {
+            x.push(e.week)
+            y.push(e.trend)
+        })
         var ctx = document.getElementById('myChart').getContext('2d');
         var chart = new Chart(ctx, {
             // The type of chart we want to create
@@ -81,32 +68,14 @@ initializeDataTable = () => {
         
             // The data for our dataset
             data: {
-                labels: weeks,
+                labels: x,
                 datasets: [
                         {
                         label: "Machine Learning",
                         backgroundColor: 'rgba(255, 255, 255,0)',
                         borderColor: 'rgb(255, 99, 132)',
-                        data: data1
+                        data: y
                     },
-                    {
-                        label: "Biometrics",
-                        backgroundColor: 'rgba(255, 99, 132, 0)',
-                        borderColor: 'rgb(21, 99, 132)',
-                        data: data3
-                    },
-                    {
-                        label: "Blockchain",
-                        backgroundColor: 'rgba(255, 99, 132, 0)',
-                        borderColor: 'rgb(21, 22, 132)',
-                        data: data2
-                    },
-                    {
-                        label: "Internet Of Things",
-                        backgroundColor: 'rgba(255, 99, 132, 0)',
-                        borderColor: 'rgb(21, 192, 132)',
-                        data: data4
-                    }
                 ]
             },
         
@@ -114,5 +83,4 @@ initializeDataTable = () => {
             options: {}
         });
     })
-    
 }
