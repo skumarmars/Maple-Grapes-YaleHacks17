@@ -13,7 +13,7 @@ Maple Grapes was our group's submission for Yale Hacks '17.  It is a data-driven
 
 * Custom Algorithm: 
 
-# ![algorithm](media/algorithm.png)
+# ![algorithm](media/algo.png)
 
 
 ## Installation
@@ -37,7 +37,7 @@ Dependencies: Express, Node v8+, Allow Control Allow Origin (browser dependent)
 
 # ![team](media/team.jpg)
 
-Faith Dennis (UC Berkeley), Shekhar Kumar (UofT), Peter Zheng (CUNY), Avkash Mukhi (UofT)
+Faith Dennis (UC Berkeley), Shekhar Kumar (University of Toronto), Peter Zheng (City University of New York), Avkash Mukhi (University of Toronto)
 
 ## Next Steps
 
