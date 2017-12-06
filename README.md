@@ -13,15 +13,14 @@ Maple Grapes was our group's submission for Yale Hacks '17.  It is a data-driven
 
 * Custom Algorithm: 
 
-# ![demo](media/algorithm.png)
+# ![algorithm](media/algorithm.png)
 
 
 ## Installation
 
 ```
-git clone [INSERT]
-cd [HACAKTHON REPO]
-cd express
+git clone https://github.com/skumarmars/Maple-Grapes-YaleHacks17.git
+cd Maple-Grapes-YaleHacks17/server
 npm start
 ```
 
@@ -33,10 +32,6 @@ Dependencies: Express, Node v8+, Allow Control Allow Origin (browser dependent)
 ## Dashboard View
 
 # ![demo](media/dashboard.png)
-
-## Analytics View
-
-# ![demo](media/analytics.png)
 
 ## Team
 
