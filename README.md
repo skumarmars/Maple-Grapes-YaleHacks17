@@ -1,6 +1,6 @@
 # ![Dispatch](media/logo.png)
 
-Maple Grapes was our group's submission for Yale Hacks '17.  It is a data-driven solution for predicting emerging technologies. Project was awarded 2nd place for the Informa Data Prediction Challenge.
+Maple Grapes was our group's submission for Yale Hacks '17.  It is a data-driven solution for predicting emerging technologies. Project was awarded 2nd place for the Informa Data Prediction Challenge. [Devpost](https://devpost.com/software/marble-grapes)
 
 
 ## Technical
