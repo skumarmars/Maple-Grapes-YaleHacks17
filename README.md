@@ -1,6 +1,6 @@
 # ![MapleGrapes](media/logo.png)
 
-Maple Grapes was our group's submission for Yale Hacks '17.  It is a solution for predicting emerging technologies. Project was awarded 2nd place for the Informa Data Prediction Challenge. [Devpost](https://devpost.com/software/marble-grapes)
+Maple Grapes was our group's submission for Yale Hacks '17 [[Devpost](https://devpost.com/software/marble-grapes)].  It is a solution for predicting emerging technologies. Project was awarded 2nd place for the Informa Data Prediction Challenge. 
 
 ## Inspiration
 Informa’s customers want to understand what new technologies will be most relevant to their businesses. This is also more “hype” around technologies. Therefore, it is increasingly important for companies to stay informed about emerging technologies.
